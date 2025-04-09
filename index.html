@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate's Guide on Elden Ring</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Solid dark color */
+            color: #f4f4f4; /* Light text for readability */
+            animation: fade-in 1.5s ease-in-out;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            animation: slide-in 1.5s ease-in-out;
+        }
+
+        nav a {
+            color: #f90;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        #main {
+            padding: 20px;
+            animation: fade-in 1.8s ease-in-out;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #888;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #888;
+            animation: zoom-in 2s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            animation: rotate 1s ease-in-out;
+        }
+
+        #footer {
+            background-color: #222;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #f90;
+            margin-top: 20px;
+            animation: slide-up 1.5s ease-in-out;
+        }
+
+        #footer p {
+            margin: 5px 0;
+        }
+
+        #footer small {
+            font-size: 12px;
+            color: #bbb;
+        }
+
+        #paymentMethod {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #888;
+            text-align: center;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        #paymentMethod input {
+            margin-top: 5px;
+        }
+
+        #paymentMethod img {
+            max-width: 150px;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoom-in {
+            from {
+                transform: scale(0.9);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <script>
+        // Back-to-top Button Script
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#moreAboutMalenia">More About Malenia</a>
+        <a href="#weaknesses">Malenia's Weaknesses</a>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="main">
+        <div id="home" class="section">
+            <h1>Welcome to Nate's Guide</h1>
+            <p>Learn how to beat Malenia, the Blade of Miquella, one of the hardest bosses in *Elden Ring*. Navigate through the sections for detailed tips, lore, and strategies.</p>
+        </div>
+
+        <!-- More About Malenia Section -->
+        <div id="moreAboutMalenia" class="section">
+            <h1>More About Malenia</h1>
+            <p>Malenia, Blade of Miquella, is an optional boss in Elden Ring. She is infamous for her ability to heal with every successful attack and her swift, deadly combos.</p>
+            <img src="/C:/Users/Major/OneDrive/Desktop/Whoareyou/Malenia.jpg" alt="Malenia, Blade of Miquella">
+        </div>
+
+        <!-- Malenia's Weaknesses Section -->
+        <div id="weaknesses" class="section">
+            <h1>Malenia's Weaknesses</h1>
+            <ul>
+                <li><strong>Fire Damage:</strong> Weapons or spells with fire effects deal significant damage to her.</li>
+                <li><strong>Bleed Effects:</strong> Bleed weapons can trigger blood loss, making her more vulnerable.</li>
+                <li><strong>Poise Damage:</strong> Heavy weapons like greatswords or colossal weapons can break her stance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back-to-top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- Payment Method -->
+    <div id="paymentMethod">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="business" value="YHRT2DM8WUVSN" />
+            <input type="hidden" name="no_recurring" value="0" />
+            <input type="hidden" name="item_name" value="Donate to help me build my website" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2025 Nate's Guide. All rights reserved.</p>
+        <small>Powered by a love for Elden Ring and dedication to the Tarnished community.</small>
+    </div>
+</body>
+</html>
